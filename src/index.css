@@ -1,13 +1,103 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Spartan", sans-serif !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.none {
+  display: none;
+}
+
+.split {
+  display: flex;
+}
+
+.column1 {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+}
+
+.column2 {
+  display: flex;
+  flex: 0.5;
+  background: rgb(27 27 27 / 20%);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.ui.input {
+  width: 100%;
+  border: 3px solid #e6e6e6;
+  border-right: none;
+  border-radius: 6px;
+  padding-left: 5px;
+}
+.ui.input > input {
+  color: #e6e6e6 !important;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-detail {
+  margin-top: 50px;
+}
+
+/* main Weather */
+.main-weather {
+  display: flex;
+  margin-top: 67px;
+  padding-left: 50px;
+}
+.deg {
+  font-weight: 600;
+  font-size: 53px;
+}
+.date-place {
+  font-size: 25px;
+  position: relative;
+  top: -15px;
+}
+.date {
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/* forecasting */
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  padding-left: 26px;
+}
+.forecastlist {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.forecast-day {
+  display: flex;
+  justify-content: center;
+}
+.forecast-desc {
+  display: flex;
+  justify-content: center;
+}
+.forecast-img {
+  margin-top: -16px;
+  margin-bottom: -19px;
 }
